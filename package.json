@@ -1,0 +1,19 @@
+{
+  "name": "crescendo-1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "npm run start:api --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server-install": "npm install --prefix server",
+    "client-install": "npm install --prefix client",
+    "install": "concurrently \"npm run server-install\" \"npm run client-install\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.1"
+  }
+}
